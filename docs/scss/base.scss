@@ -2,10 +2,5 @@
   ! GLOBAL STYLES FOR ENTIRE SITE.
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: sans-serif;
-}
+@import "./base/globals";
+@import "./base/resets";
