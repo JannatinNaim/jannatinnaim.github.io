@@ -40,7 +40,7 @@
   &__container {
     max-width: $breakpoint-xl;
     width: $global-width;
-    margin: 2rem auto;
+    margin: $section-gap auto;
   }
 
   // Stacked layout on mobile.
@@ -112,11 +112,19 @@
 }
 
 @media (min-width: $breakpoint-lg) {
+  .call_to_action {
+    padding: 1.4rem 2rem;
+  }
+
   // Side by side layout for desktop.
   .hero {
     flex-direction: row;
 
     &__content {
+      &__name {
+        font-size: $large-font;
+      }
+
       &__info {
         text-align: left;
       }

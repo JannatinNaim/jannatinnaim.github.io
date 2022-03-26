@@ -5,11 +5,10 @@
   &__container {
     width: $global-width;
     max-width: $breakpoint-xl;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 
   // Flex header elements to horizontal center.
-  margin: 0.4rem 0;
   display: flex;
   align-items: center;
 
