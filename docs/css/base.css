@@ -23,18 +23,18 @@ button {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
 .page_header {
-  margin: 0.4rem 0;
   display: flex;
   align-items: center;
 }
 .page_header__container {
   width: 96%;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 .page_header .brand {
   color: black;
