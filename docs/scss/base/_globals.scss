@@ -1,4 +1,34 @@
-// Global Variables
+// ? Global Variables
 
+// * Site Fonts
 $primary-font: "Josefin Sans", sans-serif;
 $secondary-font: "Maven Pro", sans-serif;
+
+// * Site Colors
+
+$primary-color: hsl(0, 0%, 77%);
+$secondary-color: hsl(0, 0%, 94%);
+
+// * Site Font Colors
+$primary-font-color: hsl(0, 0%, 0%);
+$secondary-font-color: hsl(0, 0%, 100%);
+
+$highlighted-font-color: hsl(0, 0%, 50%);
+
+// * Site Font Sizes
+$giant-font: 4rem;
+$large-font: 3rem;
+$medium-font: 2rem;
+$regular-font: 1.125rem;
+$small-font: 1rem;
+$tiny-font: 0.875rem;
+
+// * Site BreakPoints
+
+$global-width: 98%;
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1536px;

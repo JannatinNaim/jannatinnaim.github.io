@@ -1,0 +1,156 @@
+// ? Page Header
+
+.page_header {
+  // Container centered and set max width to $breakpoint-xl.
+  &__container {
+    width: $global-width;
+    max-width: $breakpoint-xl;
+    margin: 0 auto;
+  }
+
+  // Flex header elements to horizontal center.
+  margin: 0.4rem 0;
+  display: flex;
+  align-items: center;
+
+  // Page branding.
+  .brand {
+    color: $primary-font-color;
+    font-family: $primary-font;
+    font-size: $medium-font;
+    font-weight: 700;
+  }
+
+  // Navigation takes full screen in mobile view.
+  .responsive_navigation {
+    width: 100vw;
+    // ! Height set to 0 for hiding the menu on mobile until clicked on toggle.
+    height: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    // Same as top, bottom, left, right being 0.
+    inset: 0;
+
+    background: $primary-color;
+    transition: all 0.3s ease;
+
+    .navigation,
+    .social_icons {
+      &__list {
+        display: flex;
+        align-items: center;
+
+        .list__item {
+          &__link {
+            display: block;
+            color: $primary-font-color;
+            font-family: $primary-font;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+              transform: translateY(-0.04rem) scale(1.04);
+              color: $highlighted-font-color;
+            }
+          }
+        }
+      }
+    }
+
+    .navigation {
+      &__list {
+        flex-direction: column;
+        gap: 1.6rem;
+
+        .list__item {
+          &__link {
+            font-size: $large-font;
+          }
+        }
+      }
+    }
+
+    .social_icons {
+      margin-top: 4rem;
+
+      &__list {
+        gap: 1rem;
+
+        .list__item {
+          &__link {
+            font-size: $medium-font;
+          }
+        }
+      }
+    }
+  }
+
+  .navigation_toggle {
+    margin-left: auto;
+
+    position: relative;
+    z-index: 9;
+
+    &__icon {
+      font-size: $medium-font;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .page_header {
+    gap: 2rem;
+
+    .responsive_navigation {
+      width: auto;
+      // ! Set navigation height to full height of .page_header container.
+      height: 100%;
+
+      flex: 1;
+      flex-direction: row;
+      justify-content: space-between;
+
+      position: static;
+      opacity: 1;
+
+      padding: 0.4rem 0;
+      background: none;
+
+      .navigation,
+      .social_icons {
+        &__list {
+          .list__item {
+            &__link {
+              font-size: $regular-font;
+            }
+          }
+        }
+      }
+
+      .navigation {
+        &__list {
+          flex-direction: row;
+          gap: 0.6rem;
+        }
+      }
+
+      .social_icons {
+        margin-top: 0;
+
+        &__list {
+          gap: 0.6rem;
+        }
+      }
+    }
+
+    .navigation_toggle {
+      display: none;
+    }
+  }
+}

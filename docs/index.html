@@ -26,6 +26,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
     <!-- ? GOOGLE FONTS | END -->
 
+    <!-- ? FONT AWESOME | START -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ? FONT AWESOME | END -->
+
     <!-- ? STYLESHEETS | START -->
     <!-- * Base Styles -->
     <link rel="stylesheet" href="./css/base.css" />
@@ -34,10 +44,91 @@
     <!-- ? STYLESHEETS | END -->
 
     <!-- ? SCRIPTS | START -->
-    <link rel="stylesheet" href="./js/home.js" defer />
+    <script src="./js/home.js" defer></script>
     <!-- ? SCRIPTS | END -->
   </head>
   <body>
-    <!-- TODO: BUILD SITE. -->
+    <div class="page_header__container">
+      <header class="page_header">
+        <a href="#" class="brand">
+          <span class="brand__name">Jannatin Naim</span>
+        </a>
+        <!-- ^ .page_header .brand -->
+
+        <div class="responsive_navigation">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="list__item">
+                <a href="#" class="list__item__link">Home</a>
+              </li>
+              <!-- .navigation__list .list__item -->
+
+              <li class="list__item">
+                <a href="#" class="list__item__link">About</a>
+              </li>
+              <!-- .navigation__list .list__item -->
+
+              <li class="list__item">
+                <a href="#" class="list__item__link">Blog</a>
+              </li>
+              <!-- .navigation__list .list__item -->
+
+              <li class="list__item">
+                <a href="#" class="list__item__link">Contact</a>
+              </li>
+              <!-- .navigation__list .list__item -->
+            </ul>
+            <!-- .navigation__list -->
+          </nav>
+          <!-- ^ .page_header .navigation -->
+
+          <nav class="social_icons">
+            <ul class="social_icons__list">
+              <li class="list__item">
+                <a href="#" class="list__item__link">
+                  <i class="list__item__link__icon fa-brands fa-github fa-fw"></i>
+                </a>
+                <!-- .social__icons__list .list__item__link -->
+              </li>
+              <!-- .social__icons__list .list__item -->
+
+              <li class="list__item">
+                <a href="#" class="list__item__link">
+                  <i class="list__item__link__icon fa-brands fa-twitter fa-fw"></i>
+                </a>
+                <!-- .social__icons__list .list__item__link -->
+              </li>
+              <!-- .social__icons__list .list__item -->
+
+              <li class="list__item">
+                <a href="#" class="list__item__link">
+                  <i class="list__item__link__icon fa-brands fa-linkedin-in fa-fw"></i>
+                </a>
+                <!-- .social__icons__list .list__item__link -->
+              </li>
+              <!-- .social__icons__list .list__item -->
+
+              <li class="list__item">
+                <a href="#" class="list__item__link">
+                  <i class="list__item__link__icon fa-brands fa-youtube fa-fw"></i>
+                </a>
+                <!-- .social__icons__list .list__item__link -->
+              </li>
+              <!-- .social__icons__list .list__item -->
+            </ul>
+            <!-- .social_icons__list -->
+          </nav>
+          <!-- ^ .page_header .social_icons -->
+        </div>
+        <!-- ^ .page_header .responsive_navigation -->
+
+        <button class="navigation_toggle">
+          <i class="navigation_toggle__icon fa-solid fa-bars fa-fw"></i>
+        </button>
+        <!-- ^ .page_header .navigation_toggle -->
+      </header>
+      <!-- * .page_header -->
+    </div>
+    <!-- .page_header__container -->
   </body>
 </html>
