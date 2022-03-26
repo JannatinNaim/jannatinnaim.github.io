@@ -36,6 +36,7 @@
     position: absolute;
     // Same as top, bottom, left, right being 0.
     inset: 0;
+    z-index: 9;
 
     background: $primary-color;
     transition: all 0.3s ease;
@@ -51,7 +52,7 @@
             display: block;
             color: $primary-font-color;
             font-family: $primary-font;
-            font-weight: 500;
+            font-weight: 700;
             transition: all 0.3s ease;
 
             &:hover {
@@ -70,7 +71,7 @@
 
         .list__item {
           &__link {
-            font-size: $large-font;
+            font-size: $medium-font;
           }
         }
       }
