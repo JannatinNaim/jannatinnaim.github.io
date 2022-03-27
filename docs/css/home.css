@@ -50,7 +50,7 @@ ul {
 }
 
 .hero {
-  width: 96%;
+  width: 92%;
   max-width: 1024px;
   margin: 2rem auto;
   display: flex;
@@ -60,22 +60,22 @@ ul {
 }
 @media (min-width: 768px) {
   .hero {
-    width: 94%;
+    width: 88%;
   }
 }
 @media (min-width: 1024px) {
   .hero {
-    width: 92%;
+    width: 84%;
   }
 }
 @media (min-width: 1280px) {
   .hero {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (min-width: 1536px) {
   .hero {
-    width: 88%;
+    width: 80%;
   }
 }
 .hero > * {
