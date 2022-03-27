@@ -1,0 +1,12 @@
+.mobile_social_links_list {
+  display: flex;
+  align-items: center;
+  gap: $item-spacing-large;
+
+  &__item {
+    &__link {
+      font-size: $large-font;
+      font-weight: $bold-font;
+    }
+  }
+}

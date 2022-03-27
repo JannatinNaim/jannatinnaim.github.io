@@ -1,0 +1,7 @@
+.social_links {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $item-spacing-small;
+  }
+}

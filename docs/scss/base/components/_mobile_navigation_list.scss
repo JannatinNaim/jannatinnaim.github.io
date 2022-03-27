@@ -1,0 +1,13 @@
+.mobile_navigation_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $item-spacing-large;
+
+  &__item {
+    &__link {
+      font-size: $huge-font;
+      font-weight: $bold-font;
+    }
+  }
+}
