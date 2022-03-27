@@ -1,7 +1,41 @@
 // ? SITE BREAKPOINTS
 
+// * General Breakpoints
+
 $breakpoint-xxl: 1536px;
 $breakpoint-xl: 1280px;
 $breakpoint-lg: 1024px;
 $breakpoint-md: 768px;
 $breakpoint-sm: 640px;
+
+// * Container Breakpoints
+
+$global-container: $breakpoint-lg;
+
+// * General Widths
+
+$width-xxl: 90%;
+$width-xl: 92%;
+$width-lg: 94%;
+$width-md: 96%;
+$width-sm: 98%;
+
+@mixin auto-container-width {
+  width: $width-sm;
+
+  @media (min-width: $breakpoint-md) {
+    width: $width-md;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: $width-lg;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    width: $width-xl;
+  }
+
+  @media (min-width: $breakpoint-xxl) {
+    width: $width-xxl;
+  }
+}
