@@ -1,12 +1,13 @@
 @import "./base/globals";
 @import "./base/resets";
 
-@import "./base/components/branding";
-@import "./base/components/navigation";
-@import "./base/components/social_links";
-@import "./base/components/navigation_toggle";
-@import "./base/components/mobile_navigation_list";
-@import "./base/components/mobile_social_links_list";
+@import "./components/base/branding";
+@import "./components/base/navigation";
+@import "./components/base/social_links";
+@import "./components/base/navigation_toggle";
+@import "./components/base/mobile_navigation_list";
+@import "./components/base/mobile_social_links_list";
+@import "./components/base/call_to_action";
 
 .mobile_navigation {
   height: 0px;

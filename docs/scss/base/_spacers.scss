@@ -4,8 +4,8 @@
 
 $section-spacing: 4rem;
 
-$section-spacing-half: $section-spacing / 2;
-$section-spacing-quarter: $section-spacing / 4;
+$section-spacing-half: calc($section-spacing / 2);
+$section-spacing-quarter: calc($section-spacing / 4);
 
 // * Paragraph Spacing
 
@@ -16,11 +16,12 @@ $paragraph-spacing-small: 0.4rem;
 
 // * Item Spacing
 
+$item-spacing-huge: 2rem;
 $item-spacing-large: 1.5rem;
-$item-spacing-medium: 1.2rem;
-$item-spacing-regular: 0.8rem;
-$item-spacing-small: 0.6rem;
-$item-spacing-tiny: 0.4rem;
+$item-spacing-medium: 1.25rem;
+$item-spacing-regular: 1rem;
+$item-spacing-small: 0.8rem;
+$item-spacing-tiny: 0.6rem;
 
 // * Content Spacing
 

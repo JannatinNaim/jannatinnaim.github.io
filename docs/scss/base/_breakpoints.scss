@@ -14,11 +14,11 @@ $global-container: $breakpoint-lg;
 
 // * General Widths
 
-$width-xxl: 90%;
-$width-xl: 92%;
-$width-lg: 94%;
-$width-md: 96%;
-$width-sm: 98%;
+$width-xxl: 80%;
+$width-xl: 80%;
+$width-lg: 84%;
+$width-md: 88%;
+$width-sm: 92%;
 
 @mixin auto-container-width {
   width: $width-sm;
