@@ -12,5 +12,21 @@ export default function () {
     } else {
       mobileNavigation.style.height = "100%";
     }
+
+    window.addEventListener(
+      "resize",
+      function () {
+        mobileNavigation.style.height = "0px";
+      },
+      { once: true }
+    );
+
+    mobileNavigation.addEventListener(
+      "click",
+      function () {
+        mobileNavigation.style.height = "0px";
+      },
+      { once: true }
+    );
   });
 }

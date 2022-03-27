@@ -5,6 +5,17 @@
   gap: $item-spacing-large;
 
   &__item {
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $primary-font-color-light;
+      transform: translateY(-0.1rem) scale(1.1);
+    }
+
+    &:active {
+      transform: translateX(0) scale(1);
+    }
+
     &__link {
       font-size: $huge-font;
       font-weight: $bold-font;
