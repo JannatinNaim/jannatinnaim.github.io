@@ -79,18 +79,20 @@
 
     <!-- ^ Base Styles -->
     <link rel="stylesheet" href="./css/base.css" />
+    <!-- ^ Home Styles -->
+    <link rel="stylesheet" href="./css/home.css" />
 
     <!-- ? STYLESHEETS | END -->
 
     <!-- ? SCRIPTS | START -->
 
+    <!-- ^ Home Script -->
     <script defer src="./js/home.js" type="module"></script>
 
     <!-- ? SCRIPTS | END -->
   </head>
   <body>
     <!-- ? MOBILE NAVIGATION | START -->
-    <!-- <div class="mobile_navigation__container"> -->
     <nav class="mobile_navigation" id="page_header_mobile_navigation">
       <ul class="mobile_navigation_list">
         <li class="mobile_navigation_list__item">
@@ -155,8 +157,6 @@
       <!-- ^ .mobile_social_links_list -->
     </nav>
     <!-- * .mobile_navigation -->
-    <!-- </div> -->
-    <!-- .mobile_navigation__container -->
     <!-- ? MOBILE NAVIGATION | END -->
 
     <!-- ? PAGE HEADER | START -->
@@ -243,5 +243,55 @@
     </div>
     <!-- .page_header__container -->
     <!-- ? PAGE HEADER | END -->
+
+    <!-- ? HERO | START -->
+    <div class="hero__container">
+      <section class="hero">
+        <div class="banner">
+          <img src="./img/home/hero__banner__image.svg" alt="Hero Banner" class="banner__image" />
+        </div>
+        <!-- ^ .hero .banner -->
+
+        <div class="content">
+          <span class="content__name">Heyo! How's it going?</span>
+
+          <div class="content__info">
+            <h1 class="content__info__name">
+              I'm <span class="bold-text">Jannatin Naim</span>, a high school student and a passionate web developer
+              who's trying to find his place in this vast ocean of opportunities.
+            </h1>
+
+            <span class="content__info__description">
+              The world has too many problems to fix, but I can solve a few of them, can't I?
+            </span>
+          </div>
+          <!-- .content__info -->
+
+          <p class="content__info">
+            I'm currently a Web Designer at
+            <a href="#" class="content__info__link bold-text underlined-text">RixoTech</a> working with
+            <span class="medium-text">HTML, CSS & JavaScript</span>. Nothing beats the feeling of collaborating with
+            others and building things that help everyone lead a better life. ;)
+          </p>
+          <!-- .content__info -->
+
+          <p class="content__info">
+            Ow, I watch way too much anime. Here's a
+            <a href="#" class="content__info__link underlined-text">list of anime</a> I gave my precious time to.
+          </p>
+          <!-- .content__info -->
+
+          <div class="call_to_action__container">
+            <a href="#" class="call_to_action call_to_action--solid">Portfolio</a>
+            <a href="#" class="call_to_action call_to_action--hollow">Hire Me</a>
+          </div>
+          <!-- .call_to_action__container -->
+        </div>
+        <!-- ^ .hero .content -->
+      </section>
+      <!-- * .hero -->
+    </div>
+    <!-- .hero__container -->
+    <!-- ? HERO | END -->
   </body>
 </html>
