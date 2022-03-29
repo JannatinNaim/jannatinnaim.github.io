@@ -1,0 +1,11 @@
+@mixin click-effect {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.1rem);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

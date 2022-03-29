@@ -5,18 +5,10 @@
     gap: $item-spacing-regular;
 
     &__item {
-      transition: all 0.3s ease;
-
-      &:hover {
-        color: $primary-font-color-light;
-        transform: translateY(-0.1rem) scale(1.1);
-      }
-
-      &:active {
-        transform: translateX(0) scale(1);
-      }
+      @include click-effect;
 
       &__link {
+        font-size: $small-font;
         font-weight: $bold-font-weight;
       }
     }

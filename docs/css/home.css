@@ -10,6 +10,11 @@
   text-decoration: underline;
 }
 
+.prevent-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -41,7 +46,7 @@ ul {
 }
 .content__name {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.125rem;
   font-weight: 700;
 }
 .content__info {
@@ -49,14 +54,101 @@ ul {
   margin-bottom: 1rem;
 }
 
+.carousel {
+  overflow: hidden;
+  position: relative;
+  min-height: 38rem;
+  border-radius: 0.6rem;
+}
+.carousel__navigation {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.6rem;
+}
+@media (min-width: 1024px) {
+  .carousel__navigation {
+    padding: 0 1rem;
+  }
+}
+.carousel__navigation__button {
+  background: none;
+  border: none;
+  font-size: 2.125rem;
+  transition: all 0.3s ease;
+}
+.carousel__navigation__button:hover {
+  transform: translateY(-0.1rem);
+}
+.carousel__navigation__button:active {
+  transform: translateY(0);
+}
+.carousel__navigation__button:hover {
+  cursor: pointer;
+}
+.carousel__cards .carousel_card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 0;
+}
+.carousel__cards .carousel_card--active {
+  opacity: 1;
+  z-index: 1;
+}
+.carousel__cards .carousel_card__banner {
+  position: absolute;
+  inset: 0;
+}
+.carousel__cards .carousel_card__banner__image {
+  border-radius: 0.6rem;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel__cards .carousel_card__content {
+  position: absolute;
+  inset: 0;
+  top: unset;
+  padding: 0 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.carousel__cards .carousel_card__content__name {
+  font-size: 2.125rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1rem;
+  max-width: 38ch;
+}
+.carousel__cards .carousel_card__content__info {
+  font-size: 1.125rem;
+  font-family: 1.125rem;
+  max-width: 64ch;
+}
+@media (min-width: 1024px) {
+  .carousel__cards .carousel_card__content {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .hero {
   width: 92%;
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 @media (min-width: 768px) {
   .hero {
@@ -99,6 +191,7 @@ ul {
   margin-bottom: 1.5rem;
 }
 .hero .content__info {
+  font-size: 1.125rem;
   text-align: justify;
 }
 @media (min-width: 1024px) {
@@ -108,7 +201,7 @@ ul {
 }
 .hero .content__info__name {
   display: inline;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 .hero .content .call_to_action__container {
@@ -120,6 +213,32 @@ ul {
 @media (min-width: 1024px) {
   .hero .content .call_to_action__container {
     justify-content: flex-start;
+  }
+}
+
+.featured_blogs__container {
+  width: 92%;
+  max-width: 1280px;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .featured_blogs__container {
+    width: 88%;
+  }
+}
+@media (min-width: 1024px) {
+  .featured_blogs__container {
+    width: 84%;
+  }
+}
+@media (min-width: 1280px) {
+  .featured_blogs__container {
+    width: 80%;
+  }
+}
+@media (min-width: 1536px) {
+  .featured_blogs__container {
+    width: 80%;
   }
 }
 

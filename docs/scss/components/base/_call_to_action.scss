@@ -1,23 +1,15 @@
 .call_to_action {
   display: inline-block;
-  padding: $item-spacing-small $item-spacing-medium;
+  padding: $item-spacing-regular $item-spacing-large;
 
   font-family: $secondary-font;
-  font-size: $medium-font;
+  font-size: $regular-font;
   font-weight: $bold-font-weight;
 
   border: 2px solid #00000000;
   border-radius: 0.6rem;
 
-  transition: all 0.3s ease;
-
-  &:hover {
-    transform: translateY(-0.1rem) scale(1.1);
-  }
-
-  &:active {
-    transform: translateX(0) scale(1);
-  }
+  @include click-effect;
 
   &--solid {
     background: $primary-color;
