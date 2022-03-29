@@ -1,5 +1,4 @@
 export default function () {
-  const carousel = document.querySelector(".featured_blogs .carousel");
   const carouselNavigationButtons = document.querySelectorAll(".featured_blogs .carousel__navigation__button");
   const carouselCards = document.querySelector(".featured_blogs .carousel__cards");
 

@@ -76,7 +76,7 @@
         top: unset;
 
         padding: 0 $content-spacing-tiny;
-        padding-bottom: $content-spacing-tiny;
+        padding-bottom: $content-spacing-medium;
 
         &__name {
           font-size: $large-font;
@@ -95,8 +95,32 @@
 
         @media (min-width: $breakpoint-lg) {
           padding: 0 $content-spacing-regular;
-          padding-bottom: $content-spacing-regular;
+          padding-bottom: $content-spacing-medium;
         }
+      }
+    }
+  }
+
+  &__index {
+    position: absolute;
+    z-index: 1;
+    bottom: $content-spacing-tiny;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__dot {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      background: $primary-color-light;
+
+      &--active {
+        background: $primary-color-dark;
       }
     }
   }
