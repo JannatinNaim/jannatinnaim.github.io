@@ -60,6 +60,11 @@ ul {
   min-height: 38rem;
   border-radius: 0.6rem;
 }
+@media (min-width: 1024px) {
+  .carousel {
+    min-height: 48rem;
+  }
+}
 .carousel__navigation {
   position: absolute;
   inset: 0;
