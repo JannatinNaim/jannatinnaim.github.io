@@ -6,6 +6,10 @@
 
   border-radius: 0.6rem;
 
+  @media (min-width: $breakpoint-lg) {
+    min-height: 48rem;
+  }
+
   &__navigation {
     position: absolute;
     inset: 0;
