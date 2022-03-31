@@ -9,7 +9,7 @@ function technologiesWheel() {
   let newX = 0;
   let newY = 0;
 
-  let wheelRadius = window.innerWidth >= 425 ? 150 : 120;
+  let wheelRadius = window.innerWidth >= 425 ? 180 : 120;
 
   const icons = document.querySelectorAll(
     ".technologies__banner__container:not(.technologies__banner__container--special):not(.technologies__banner__container--orientation)"

@@ -326,6 +326,7 @@ ul {
 .technologies__banner {
   position: relative;
   min-height: 26rem;
+  filter: grayscale(100%);
 }
 .technologies__banner__container {
   display: block;

@@ -122,6 +122,8 @@
     position: relative;
     min-height: 26rem;
 
+    filter: grayscale(100%);
+
     &__container {
       display: block;
       width: 4.5rem;
