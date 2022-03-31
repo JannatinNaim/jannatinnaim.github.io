@@ -8,13 +8,19 @@
     &:hover {
       .project {
         &__content {
+          color: $primary-color-light;
+
           &__name {
             margin-bottom: $item-spacing-regular;
           }
 
           &__info {
-            height: 4ch;
+            height: 2rem;
           }
+        }
+
+        &__banner {
+          background: rgba(0, 0, 0, 0.5);
         }
 
         &__link_icon {
@@ -28,8 +34,6 @@
     position: absolute;
     inset: 1rem;
     top: auto;
-
-    transition: all 0.3s ease;
 
     &__name {
       display: block;
@@ -59,6 +63,10 @@
   }
 
   &__banner {
+    height: 100%;
+
+    transition: all 0.3s ease;
+
     &__image {
       border-radius: 0.6rem;
       display: block;

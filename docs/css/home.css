@@ -183,11 +183,17 @@ img {
   min-height: 18rem;
 }
 @media (min-width: 1024px) {
+  .project:hover .project__content {
+    color: #e6e6e6;
+  }
   .project:hover .project__content__name {
     margin-bottom: 1rem;
   }
   .project:hover .project__content__info {
-    height: 4ch;
+    height: 2rem;
+  }
+  .project:hover .project__banner {
+    background: rgba(0, 0, 0, 0.5);
   }
   .project:hover .project__link_icon {
     opacity: 1;
@@ -197,7 +203,6 @@ img {
   position: absolute;
   inset: 1rem;
   top: auto;
-  transition: all 0.3s ease;
 }
 .project__content__name {
   display: block;
@@ -222,6 +227,10 @@ img {
     height: 0px;
     overflow: hidden;
   }
+}
+.project__banner {
+  height: 100%;
+  transition: all 0.3s ease;
 }
 .project__banner__image {
   border-radius: 0.6rem;
