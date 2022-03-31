@@ -8,7 +8,7 @@
 .hero {
   @include auto-container-width;
   max-width: $global-container;
-  margin: $section-spacing-half auto;
+  margin: $section-spacing-quarter auto;
 
   display: flex;
   flex-direction: column;
@@ -42,13 +42,6 @@
     }
 
     &__info {
-      font-size: $regular-font;
-      text-align: justify;
-
-      @media (min-width: $breakpoint-lg) {
-        text-align: left;
-      }
-
       &__name {
         display: inline;
         font-size: $regular-font;
@@ -73,6 +66,95 @@
   &__container {
     @include auto-container-width;
     max-width: $global-container;
-    margin: $section-spacing-half auto;
+    margin: $section-spacing auto;
+  }
+}
+
+.technologies {
+  &__container {
+    @include auto-container-width;
+    max-width: $global-container;
+    margin: $section-spacing auto;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * {
+    flex: 1;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    flex-direction: row;
+  }
+
+  .content {
+    &__name {
+      margin-bottom: $item-spacing-large;
+    }
+
+    &__info {
+      font-size: $regular-font;
+      text-align: justify;
+      margin-bottom: $content-spacing-regular;
+    }
+
+    &__technology_list {
+      margin-bottom: $content-spacing-regular;
+
+      &__item {
+        font-size: $regular-font;
+        margin-bottom: $item-spacing-small;
+
+        &__icon {
+          margin-right: $item-spacing-small;
+        }
+      }
+    }
+
+    .call_to_action {
+      text-transform: uppercase;
+    }
+  }
+
+  &__banner {
+    position: relative;
+    min-height: 26rem;
+
+    &__container {
+      display: block;
+      width: 4.5rem;
+      padding: $content-spacing-small;
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media (min-width: $breakpoint-md) {
+        width: 6rem;
+      }
+
+      &:hover {
+        transition: 0.3s ease;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      }
+
+      &--special {
+        width: 8rem;
+      }
+
+      &--orientation {
+        width: fit-content;
+      }
+
+      &__icon {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 }
