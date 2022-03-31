@@ -8,7 +8,13 @@
   }
 
   &__info {
+    font-size: $regular-font;
+    text-align: justify;
     line-height: 1.4;
     margin-bottom: $item-spacing-regular;
+
+    @media (min-width: $breakpoint-lg) {
+      text-align: left;
+    }
   }
 }
