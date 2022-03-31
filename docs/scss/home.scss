@@ -4,6 +4,7 @@
 @import "./components/home/banner";
 @import "./components/home/content";
 @import "./components/home/carousel";
+@import "./components/home/project";
 
 .hero {
   @include auto-container-width;
@@ -80,6 +81,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: $content-spacing-regular;
 
   > * {
     flex: 1;
@@ -157,6 +159,54 @@
         display: block;
         width: 100%;
       }
+    }
+  }
+}
+
+.projects {
+  &__container {
+    @include auto-container-width;
+    max-width: $global-container;
+    margin: $section-spacing auto;
+  }
+
+  &__name {
+    font-family: $primary-font;
+    font-size: $large-font;
+    font-weight: $bold-font-weight;
+    margin-bottom: $content-spacing-regular;
+    text-align: center;
+  }
+
+  &__gallery {
+    display: grid;
+    gap: $content-spacing-small;
+    grid-template-columns: repeat(1, 1fr);
+
+    margin-bottom: $content-spacing-regular;
+
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__all_projects_link {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+
+    font-size: $regular-font;
+
+    &__icon {
+      margin-right: $item-spacing-tiny;
+    }
+
+    &__name {
+      font-weight: $bold-font-weight;
     }
   }
 }
