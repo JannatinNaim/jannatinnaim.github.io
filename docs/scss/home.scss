@@ -168,6 +168,7 @@
     @include auto-container-width;
     max-width: $global-container;
     margin: $section-spacing auto;
+    margin-bottom: $section-spacing-half;
   }
 
   &__name {
@@ -213,8 +214,36 @@
 
 .newsletter {
   &__container {
-    @include auto-container-width;
-    max-width: $global-container;
-    margin: $section-spacing auto;
+    background: $primary-color-light;
+  }
+
+  @include auto-container-width;
+  max-width: $global-container;
+  margin: 0 auto;
+  padding: $content-spacing-small 0;
+
+  &__subscription_form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: $item-spacing-regular;
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+    }
+
+    &__email {
+      border: none;
+      flex: 3;
+      display: block;
+      padding: $item-spacing-regular;
+      border-radius: 0.6rem;
+      font-size: $regular-font;
+    }
+
+    &__submit {
+      flex: 1;
+      padding: $item-spacing-small $item-spacing-regular;
+    }
   }
 }
