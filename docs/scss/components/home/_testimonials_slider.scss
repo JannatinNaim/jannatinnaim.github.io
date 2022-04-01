@@ -1,6 +1,12 @@
 .testimonials_slider {
   position: relative;
-  min-height: 20rem;
+  min-height: 36rem;
+  max-width: $breakpoint-lg;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-lg) {
+    min-height: 16rem;
+  }
 
   &__navigation_button {
     position: absolute;
@@ -28,21 +34,35 @@
   }
 
   .testimonial {
+    width: 100%;
     position: absolute;
     display: flex;
-    gap: $content-spacing-large;
+    flex-direction: column;
+    gap: $content-spacing-regular;
     transition: all 0.3s ease;
 
     opacity: 0;
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+      gap: $content-spacing-large;
+    }
 
     &--active {
       opacity: 1;
     }
 
     &__content {
-      flex: 3;
+      margin: 0 auto;
+      order: 1;
+
+      @media (min-width: $breakpoint-lg) {
+        flex: 3;
+        order: 0;
+      }
 
       &__info {
+        text-align: justify;
         max-width: 68ch;
         line-height: 1.4;
         margin-bottom: $content-spacing-regular;
@@ -66,12 +86,15 @@
     }
 
     &__banner {
-      flex: 1;
-      border-radius: 50%;
-      background: $primary-color;
-      padding: 1rem;
+      @media (min-width: $breakpoint-lg) {
+        flex: 1;
+      }
 
       &__image {
+        margin: 0 auto;
+        max-width: 16rem;
+        background: $primary-color;
+        padding: 1rem;
         border-radius: 50%;
       }
     }
