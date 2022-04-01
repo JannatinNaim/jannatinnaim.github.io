@@ -13,5 +13,5 @@ export default function () {
     currentTestimonial.classList.remove("testimonial--active");
     const nextTestimonial = [...testimonials][nextIndex];
     nextTestimonial.classList.add("testimonial--active");
-  }, 5000);
+  }, 9000);
 }

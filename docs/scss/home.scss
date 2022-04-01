@@ -6,6 +6,7 @@
 @import "./components/home/carousel";
 @import "./components/home/project";
 @import "./components/home/testimonials_slider";
+@import "./components/home/qualification";
 
 .hero {
   @include auto-container-width;
@@ -275,5 +276,48 @@
     font-weight: $bold-font-weight;
     margin-bottom: $content-spacing-regular;
     text-align: center;
+  }
+}
+
+.qualifications {
+  &__container {
+    background: $primary-color-light;
+    padding: $section-spacing-half 0;
+  }
+
+  @include auto-container-width;
+  max-width: $global-container;
+  margin: 0 auto;
+
+  &__name {
+    font-family: $primary-font;
+    font-size: $large-font;
+    font-weight: $bold-font-weight;
+    margin-bottom: $content-spacing-regular;
+    text-align: center;
+  }
+
+  .qualification_list {
+    display: flex;
+    flex-direction: column;
+    gap: $item-spacing-large;
+    align-items: center;
+  }
+
+  &__all_qualifications_link {
+    display: block;
+    width: fit-content;
+    margin-top: $content-spacing-regular;
+    margin-left: auto;
+
+    font-size: $regular-font;
+
+    &__icon {
+      margin-right: $item-spacing-tiny;
+    }
+
+    &__name {
+      font-weight: $bold-font-weight;
+    }
   }
 }

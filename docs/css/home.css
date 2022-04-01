@@ -246,7 +246,14 @@ img {
 
 .testimonials_slider {
   position: relative;
-  min-height: 20rem;
+  min-height: 36rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .testimonials_slider {
+    min-height: 16rem;
+  }
 }
 .testimonials_slider__navigation_button {
   position: absolute;
@@ -270,19 +277,35 @@ img {
   left: 4rem;
 }
 .testimonials_slider .testimonial {
+  width: 100%;
   position: absolute;
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 2rem;
   transition: all 0.3s ease;
   opacity: 0;
+}
+@media (min-width: 1024px) {
+  .testimonials_slider .testimonial {
+    flex-direction: row;
+    gap: 4rem;
+  }
 }
 .testimonials_slider .testimonial--active {
   opacity: 1;
 }
 .testimonials_slider .testimonial__content {
-  flex: 3;
+  margin: 0 auto;
+  order: 1;
+}
+@media (min-width: 1024px) {
+  .testimonials_slider .testimonial__content {
+    flex: 3;
+    order: 0;
+  }
 }
 .testimonials_slider .testimonial__content__info {
+  text-align: justify;
   max-width: 68ch;
   line-height: 1.4;
   margin-bottom: 2rem;
@@ -300,14 +323,83 @@ img {
   font-size: 0.875rem;
   opacity: 0.65;
 }
-.testimonials_slider .testimonial__banner {
-  flex: 1;
-  border-radius: 50%;
-  background: #bfbfbf;
-  padding: 1rem;
+@media (min-width: 1024px) {
+  .testimonials_slider .testimonial__banner {
+    flex: 1;
+  }
 }
 .testimonials_slider .testimonial__banner__image {
+  margin: 0 auto;
+  max-width: 16rem;
+  background: #bfbfbf;
+  padding: 1rem;
   border-radius: 50%;
+}
+
+.qualification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  background: #bfbfbf;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media (min-width: 1024px) {
+  .qualification {
+    flex-direction: row;
+  }
+}
+.qualification:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transform: scale(1.01);
+}
+.qualification:hover .qualification__link_icon {
+  opacity: 1;
+}
+.qualification__content {
+  order: 1;
+  padding: 1rem;
+}
+@media (min-width: 1024px) {
+  .qualification__content {
+    flex: 3;
+    align-self: flex-end;
+    order: 0;
+  }
+}
+.qualification__content__name {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.qualification__content__info {
+  max-width: 64ch;
+}
+@media (min-width: 1024px) {
+  .qualification__banner {
+    flex: 1.5;
+  }
+}
+.qualification__banner__image {
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+@media (min-width: 1024px) {
+  .qualification__banner__image {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+}
+.qualification__link_icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .hero {
@@ -655,6 +747,62 @@ img {
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.qualifications {
+  width: 92%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.qualifications__container {
+  background: #e6e6e6;
+  padding: 4rem 0;
+}
+@media (min-width: 768px) {
+  .qualifications {
+    width: 88%;
+  }
+}
+@media (min-width: 1024px) {
+  .qualifications {
+    width: 84%;
+  }
+}
+@media (min-width: 1280px) {
+  .qualifications {
+    width: 80%;
+  }
+}
+@media (min-width: 1536px) {
+  .qualifications {
+    width: 80%;
+  }
+}
+.qualifications__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.125rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.qualifications .qualification_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.qualifications__all_qualifications_link {
+  display: block;
+  width: fit-content;
+  margin-top: 2rem;
+  margin-left: auto;
+  font-size: 1rem;
+}
+.qualifications__all_qualifications_link__icon {
+  margin-right: 0.6rem;
+}
+.qualifications__all_qualifications_link__name {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=home.css.map */
