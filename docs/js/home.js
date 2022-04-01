@@ -5,6 +5,8 @@ import featuredBlogsCarouselCardsIndexUpdater from "./home/featuredBlogsCarousel
 import featuredBlogsCarouselAutoNavigator from "./home/featuredBlogsCarouselAutoNavigator.js";
 import featuredBlogsCarouselIndexNavigator from "./home/featuredBlogsCarouselIndexNavigator.js";
 import technologiesWheel from "./home/technologiesWheel.js";
+import testimonialsSlider from "./home/testimonialsSlider.js";
+import testimonialsAutoSlider from "./home/testimonialsAutoSlider.js";
 
 toggleMobileNavigation();
 featuredBlogsCarouselNavigation();
@@ -13,3 +15,5 @@ featuredBlogsCarouselCardsIndexUpdater();
 featuredBlogsCarouselAutoNavigator();
 featuredBlogsCarouselIndexNavigator();
 technologiesWheel();
+testimonialsSlider();
+testimonialsAutoSlider();
