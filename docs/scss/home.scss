@@ -210,3 +210,11 @@
     }
   }
 }
+
+.newsletter {
+  &__container {
+    @include auto-container-width;
+    max-width: $global-container;
+    margin: $section-spacing auto;
+  }
+}

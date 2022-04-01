@@ -55,7 +55,7 @@ img {
   font-weight: 700;
 }
 .content__info {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: justify;
   line-height: 1.4;
   margin-bottom: 1rem;
@@ -77,37 +77,26 @@ img {
     min-height: 48rem;
   }
 }
-.carousel__navigation {
-  position: absolute;
-  inset: 0;
-  z-index: 9;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0.6rem;
-}
-@media (min-width: 1024px) {
-  .carousel__navigation {
-    padding: 0 1rem;
-  }
-}
 .carousel__navigation__button {
+  position: absolute;
+  z-index: 9;
   background: none;
   border: none;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 2.125rem;
-  transition: all 0.3s ease;
-}
-.carousel__navigation__button:hover {
-  transform: translateY(-0.1rem);
-}
-.carousel__navigation__button:active {
-  transform: translateY(0);
 }
 .carousel__navigation__button:hover {
   cursor: pointer;
 }
+.carousel__navigation__button--previous {
+  left: 1rem;
+}
+.carousel__navigation__button--next {
+  right: 1rem;
+}
 .carousel__cards .carousel_card {
+  display: block;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -147,8 +136,8 @@ img {
   max-width: 38ch;
 }
 .carousel__cards .carousel_card__content__info {
-  font-size: 1.125rem;
-  font-family: 1.125rem;
+  font-size: 1rem;
+  font-family: 1rem;
   max-width: 64ch;
 }
 @media (min-width: 1024px) {
@@ -172,6 +161,9 @@ img {
   width: 1rem;
   border-radius: 50%;
   background: #e6e6e6;
+}
+.carousel__index__dot:hover {
+  cursor: pointer;
 }
 .carousel__index__dot--active {
   background: #999999;
@@ -207,7 +199,7 @@ img {
 .project__content__name {
   display: block;
   margin-bottom: 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -217,7 +209,7 @@ img {
   }
 }
 .project__content__info {
-  font-size: 0.875rem;
+  font-size: 0.765rem;
   font-weight: 300;
   max-width: 38ch;
   transition: all 0.3s ease;
@@ -230,6 +222,7 @@ img {
 }
 .project__banner {
   height: 100%;
+  border-radius: 0.6rem;
   transition: all 0.3s ease;
 }
 .project__banner__image {
@@ -302,7 +295,7 @@ img {
 }
 .hero .content__info__name {
   display: inline;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .hero .content .call_to_action__container {
@@ -386,7 +379,7 @@ img {
   margin-bottom: 1.5rem;
 }
 .technologies .content__info {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: justify;
   margin-bottom: 2rem;
 }
@@ -394,7 +387,7 @@ img {
   margin-bottom: 2rem;
 }
 .technologies .content__technology_list__item {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 0.8rem;
 }
 .technologies .content__technology_list__item__icon {
@@ -491,13 +484,39 @@ img {
   display: block;
   width: fit-content;
   margin-left: auto;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .projects__all_projects_link__icon {
   margin-right: 0.6rem;
 }
 .projects__all_projects_link__name {
   font-weight: 700;
+}
+
+.newsletter__container {
+  width: 92%;
+  max-width: 1280px;
+  margin: 8rem auto;
+}
+@media (min-width: 768px) {
+  .newsletter__container {
+    width: 88%;
+  }
+}
+@media (min-width: 1024px) {
+  .newsletter__container {
+    width: 84%;
+  }
+}
+@media (min-width: 1280px) {
+  .newsletter__container {
+    width: 80%;
+  }
+}
+@media (min-width: 1536px) {
+  .newsletter__container {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
