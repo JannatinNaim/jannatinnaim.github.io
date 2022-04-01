@@ -298,24 +298,18 @@
     <div class="featured_blogs__container">
       <section class="featured_blogs">
         <div class="carousel">
-          <div class="carousel__navigation">
-            <button
-              class="carousel__navigation__button carousel__navigation__button--previous"
-              data-direction="previous"
-            >
-              <i class="carousel__navigation__icon fa-chevron-left fa-solid fa-fw"></i>
-            </button>
-            <!-- .featured_blogs .carousel__navigation__button.carousel__navigation__button--previous -->
+          <button class="carousel__navigation__button carousel__navigation__button--previous" data-direction="previous">
+            <i class="carousel__navigation__icon fa-chevron-left fa-solid fa-fw"></i>
+          </button>
+          <!-- .featured_blogs .carousel__navigation__button.carousel__navigation__button--previous -->
 
-            <button class="carousel__navigation__button carousel__navigation__button--next" data-direction="next">
-              <i class="carousel__navigation__icon fa-solid fa-chevron-right fa-fw"></i>
-            </button>
-            <!-- .featured_blogs .carousel__navigation__button.carousel__navigation__button--next -->
-          </div>
-          <!-- .featured_blogs .carousel__navigation -->
+          <button class="carousel__navigation__button carousel__navigation__button--next" data-direction="next">
+            <i class="carousel__navigation__icon fa-solid fa-chevron-right fa-fw"></i>
+          </button>
+          <!-- .featured_blogs .carousel__navigation__button.carousel__navigation__button--next -->
 
           <div class="carousel__cards">
-            <div class="carousel_card carousel_card--active">
+            <a href="#" target="_blank" class="carousel_card carousel_card--active">
               <div class="carousel_card__banner">
                 <img
                   src="https://via.placeholder.com/1920x1080?text=. . ."
@@ -334,10 +328,10 @@
                 </p>
               </div>
               <!-- .featured_blogs .carousel__cards .carousel_card__content -->
-            </div>
+            </a>
             <!-- .featured_blogs .carousel__cards .carousel_card -->
 
-            <div class="carousel_card">
+            <a href="#" target="_blank" class="carousel_card">
               <div class="carousel_card__banner">
                 <img
                   src="https://via.placeholder.com/1920x1080?text=. . ."
@@ -356,10 +350,10 @@
                 </p>
               </div>
               <!-- .featured_blogs .carousel__cards .carousel_card__content -->
-            </div>
+            </a>
             <!-- .featured_blogs .carousel__cards .carousel_card -->
 
-            <div class="carousel_card">
+            <a href="#" target="_blank" class="carousel_card">
               <div class="carousel_card__banner">
                 <img
                   src="https://via.placeholder.com/1920x1080?text=. . ."
@@ -378,10 +372,10 @@
                 </p>
               </div>
               <!-- .featured_blogs .carousel__cards .carousel_card__content -->
-            </div>
+            </a>
             <!-- .featured_blogs .carousel__cards .carousel_card -->
 
-            <div class="carousel_card">
+            <a href="#" target="_blank" class="carousel_card">
               <div class="carousel_card__banner">
                 <img
                   src="https://via.placeholder.com/1920x1080?text=. . ."
@@ -400,7 +394,7 @@
                 </p>
               </div>
               <!-- .featured_blogs .carousel__cards .carousel_card__content -->
-            </div>
+            </a>
             <!-- .featured_blogs .carousel__cards .carousel_card -->
           </div>
           <!-- .featured_blogs .carousel__cards -->
@@ -711,5 +705,25 @@
     </div>
     <!-- .projects__container -->
     <!-- ? PROJECTS | END -->
+
+    <!-- ? NEWSLETTER | START -->
+    <div class="newsletter__container">
+      <section class="newsletter">
+        <form action="#" class="newsletter__subscription_form">
+          <input type="email" class="newsletter__subscription_form__email" required />
+
+          <button type="submit" class="newsletter__subscription_form__submit">
+            <span class="newsletter__subscription_form__submit__name">Subscribe To Newsletter</span>
+
+            <i class="newsletter__subscription_form__submit__icon"></i>
+          </button>
+          <!-- .newsletter__subscription_form__submit -->
+        </form>
+        <!-- .newsletter__subscription_form -->
+      </section>
+      <!-- .newsletter -->
+    </div>
+    <!-- .newsletter__container -->
+    <!-- ? NEWSLETTER | END -->
   </body>
 </html>

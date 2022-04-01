@@ -11,37 +11,33 @@
   }
 
   &__navigation {
-    position: absolute;
-    inset: 0;
-    z-index: 9;
-
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 $content-spacing-tiny;
-
-    @media (min-width: $breakpoint-lg) {
-      padding: 0 $content-spacing-small;
-    }
-
     &__button {
+      position: absolute;
+      z-index: 9;
       background: none;
       border: none;
+      top: 50%;
+      transform: translateY(-50%);
 
       font-size: $large-font;
 
-      @include click-effect;
-
       &:hover {
         cursor: pointer;
+      }
+
+      &--previous {
+        left: $item-spacing-regular;
+      }
+
+      &--next {
+        right: $item-spacing-regular;
       }
     }
   }
 
   &__cards {
     .carousel_card {
+      display: block;
       position: absolute;
 
       height: 100%;
@@ -122,6 +118,10 @@
       width: 1rem;
       border-radius: 50%;
       background: $primary-color-light;
+
+      &:hover {
+        cursor: pointer;
+      }
 
       &--active {
         background: $primary-color-dark;
