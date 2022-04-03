@@ -75,3 +75,81 @@
     }
   }
 }
+
+.page_footer {
+  &__container {
+    @include auto-container-width;
+    max-width: $global-container;
+    margin: $section-spacing-half auto;
+  }
+
+  &__name {
+    display: block;
+    font-family: $primary-font;
+    font-size: $medium-font;
+    font-weight: $bold-font-weight;
+    text-align: center;
+    margin-bottom: $content-spacing-regular;
+
+    @media (min-width: $breakpoint-lg) {
+      text-align: left;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__links {
+      margin-bottom: $content-spacing-regular;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+
+      @media (min-width: $breakpoint-lg) {
+        align-items: flex-start;
+        margin-bottom: 0;
+      }
+
+      &__item {
+        &:hover {
+          .page_footer {
+            &__content {
+              &__links {
+                &__item {
+                  &__link {
+                    &__link_icon {
+                      opacity: 1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &__link {
+          &__link_icon {
+            transition: all 0.3s ease;
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    &__copyright {
+      text-align: center;
+
+      @media (min-width: $breakpoint-lg) {
+        align-self: flex-end;
+      }
+    }
+  }
+}

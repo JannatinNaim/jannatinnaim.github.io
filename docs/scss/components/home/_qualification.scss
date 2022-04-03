@@ -36,6 +36,9 @@
     @media (min-width: $breakpoint-lg) {
       flex: 3;
       align-self: flex-end;
+      background: $primary-color;
+      border-radius: 0.6rem;
+      border-bottom-right-radius: 0;
       order: 0;
     }
 
