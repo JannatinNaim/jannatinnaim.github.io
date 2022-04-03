@@ -364,3 +364,133 @@
     }
   }
 }
+
+.contact {
+  &__container {
+    background: $primary-color-light;
+    padding: $section-spacing-half 0;
+  }
+
+  @include auto-container-width;
+  max-width: $global-container;
+  margin: 0 auto;
+
+  display: grid;
+  gap: $content-spacing-regular;
+
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__content {
+    @media (min-width: $breakpoint-lg) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &__name {
+      font-family: $primary-font;
+      font-size: $large-font;
+      font-weight: $bold-font-weight;
+      margin-bottom: $content-spacing-regular;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: $item-spacing-tiny;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: $item-spacing-small;
+
+        &__icon {
+          font-weight: $bold-font-weight;
+          font-size: $medium-font;
+        }
+
+        &__name {
+          font-weight: $medium-font-weight;
+        }
+      }
+    }
+  }
+
+  &__direct {
+    @media (min-width: $breakpoint-lg) {
+      grid-column: 1;
+      grid-row: 2;
+
+      margin-top: auto;
+      max-width: 48ch;
+    }
+
+    &__info {
+      margin-bottom: $item-spacing-regular;
+    }
+
+    .call_to_action__container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: $item-spacing-regular;
+
+      .call_to_action {
+        text-align: center;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__form {
+    @media (min-width: $breakpoint-lg) {
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.6rem;
+    padding: $item-spacing-regular;
+
+    background: $primary-color;
+    gap: $item-spacing-regular;
+
+    &__name_input,
+    &__email_input,
+    &__message_input {
+      border: none;
+      border-radius: 0.6rem;
+      font-size: $regular-font;
+      padding: 0.4rem;
+      font-family: inherit;
+    }
+
+    &__message_input {
+      resize: none;
+      height: 100%;
+      min-height: 8rem;
+    }
+
+    &__submit {
+      width: fit-content;
+      align-self: flex-end;
+
+      border: none;
+      border-radius: 0.6rem;
+      font-family: $primary-font;
+      font-size: $regular-font;
+      font-weight: $bold-font-weight;
+      padding: $item-spacing-small $item-spacing-large;
+    }
+  }
+}
