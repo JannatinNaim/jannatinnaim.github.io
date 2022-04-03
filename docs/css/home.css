@@ -906,4 +906,134 @@ img {
   border-radius: 0.6rem;
 }
 
+.contact {
+  width: 92%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+}
+.contact__container {
+  background: #e6e6e6;
+  padding: 4rem 0;
+}
+@media (min-width: 768px) {
+  .contact {
+    width: 88%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    width: 84%;
+  }
+}
+@media (min-width: 1280px) {
+  .contact {
+    width: 80%;
+  }
+}
+@media (min-width: 1536px) {
+  .contact {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .contact__content {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+.contact__content__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.125rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.contact__content__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.contact__content__links__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact__content__links__item__icon {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.contact__content__links__item__name {
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  .contact__direct {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: auto;
+    max-width: 48ch;
+  }
+}
+.contact__direct__info {
+  margin-bottom: 1rem;
+}
+.contact__direct .call_to_action__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact__direct .call_to_action__container .call_to_action {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contact__direct .call_to_action__container {
+    flex-direction: row;
+  }
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  background: #bfbfbf;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .contact__form {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+}
+.contact__form__name_input, .contact__form__email_input, .contact__form__message_input {
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  font-family: inherit;
+}
+.contact__form__message_input {
+  resize: none;
+  height: 100%;
+  min-height: 8rem;
+}
+.contact__form__submit {
+  width: fit-content;
+  align-self: flex-end;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+}
+
 /*# sourceMappingURL=home.css.map */
